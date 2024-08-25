@@ -36,4 +36,23 @@ document.addEventListener('DOMContentLoaded', () => {
         'No matching location found'
     }
   }
+
+  const updateImg = condition => {
+    let src = 'https://giphy.com/embed/WOfGfEQwDzdGcXYmrn'
+    switch (condition) {
+      case 'clear-day':
+        src = 'https://giphy.com/embed/lyVNcb1n5Ob0Q'
+        break
+      case 'cloudy':
+        src = 'https://giphy.com/embed/xMPdlWMxIkLpS'
+        break
+      case 'partly-cloudy-day':
+        src = 'https://giphy.com/embed/Ole6YAEGcciPXmw4mf'
+        break
+      case 'rainy':
+        src = 'https://giphy.com/embed/vLi3T5m3RH45y'
+        break
+    }
+    return src
+  }
 })
